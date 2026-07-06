@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 17 - Gestión de Tareas</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; margin: 0; padding: 20px; display: flex; justify-content: center; }
+        .container { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%; max-width: 500px; }
+        h2 { color: #333; margin-top: 0; text-align: center; }
+        .input-group { display: flex; margin-bottom: 20px; gap: 10px; }
+        input[type="text"] { flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px; }
+        button { padding: 10px 15px; border: none; border-radius: 4px; font-weight: bold; cursor: pointer; transition: background 0.2s; }
+        .btn-add { background-color: #28a745; color: white; font-size: 16px; }
+        .btn-add:hover { background-color: #218838; }
+        ul { list-style: none; padding: 0; margin: 0; }
+        li { background: #f9f9f9; padding: 12px; margin-bottom: 8px; border-radius: 4px; display: flex; justify-content: space-between; align-items: center; border-left: 5px solid #007bff; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .btn-delete { background-color: #dc3545; color: white; padding: 6px 10px; font-size: 14px; }
+        .btn-delete:hover { background-color: #c82333; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Gestión de Tareas</h2>
+        
+        <div class="input-group">
+            <input type="text" id="nuevaTarea" placeholder="Escribe una nueva tarea...">
+            <button class="btn-add" id="btnAgregar">Agregar</button>
+        </div>
+
+        <ul id="listaTareas"></ul>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
