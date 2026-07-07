@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio - Litzi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-light text-dark">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Litzi | Portafolio</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="#sobre-mi">Sobre Mí</a>
+                <a class="nav-link" href="#skills">Habilidades</a>
+                <a class="nav-link" href="#proyectos">Proyectos</a>
+                <a class="nav-link" href="#ubicacion">Ubicación</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container my-5 py-5 text-center">
+        <img src="img/mi-foto-formal.png" alt="Foto de perfil de Litzi" class="rounded-circle mb-4 border border-primary shadow" style="width: 150px; height: 150px; object-fit: cover;">
+        <h1 class="display-4 fw-bold">Hola, soy Litzi</h1>
+        <p class="lead">Estudiante de Programación Web</p>
+    </header>
+
+    <section id="sobre-mi" class="container my-5 py-4 bg-white rounded shadow-sm">
+        <h2 class="text-center mb-4 text-primary">Sobre Mí</h2>
+        <p class="text-muted text-center px-md-5">
+            Escribe aquí una breve descripción sobre ti, qué te motivó a estudiar programación y cuáles son tus metas en el desarrollo web.
+        </p>
+    </section>
+
+    <section id="skills" class="container my-5 py-4 bg-white rounded shadow-sm">
+        <h2 class="text-center mb-4 text-primary fw-bold">Mis Habilidades</h2>
+        <div class="row text-center g-4">
+            <div class="col-md-4">
+                <div class="p-3 border rounded bg-light">
+                    <h5 class="fw-bold">HTML5</h5>
+                    <p class="text-muted small">Estructuración de páginas web y formularios.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 border rounded bg-light">
+                    <h5 class="fw-bold">CSS3 & Bootstrap</h5>
+                    <p class="text-muted small">Diseño adaptativo, estilos y maquetación visual.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 border rounded bg-light">
+                    <h5 class="fw-bold">JavaScript</h5>
+                    <p class="text-muted small">Interactividad básica y lógica de programación.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="container my-5 py-4 bg-white rounded shadow-sm">
+        <h2 class="text-center mb-4 text-primary fw-bold">Mis Proyectos</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Prácticas de Programación Web</h5>
+                        <p class="card-text text-muted">Colección de ejercicios realizados durante el curso de verano (Ejercicios del 1 al 17).</p>
+                        <span class="badge bg-secondary">HTML</span>
+                        <span class="badge bg-secondary">CSS</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Portafolio Web Profesional</h5>
+                        <p class="card-text text-muted">Este mismo sitio web, desarrollado con Bootstrap para presentar mi perfil y habilidades.</p>
+                        <span class="badge bg-primary">Bootstrap</span>
+                        <span class="badge bg-secondary">JS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ubicacion" class="container my-5 py-4 bg-white rounded shadow-sm">
+        <div class="row align-items-center g-4">
+            <div class="col-md-6 text-center text-md-start px-4">
+                <h3 class="text-uppercase text-secondary small fw-bold mb-1">Visítanos</h3>
+                <h2 class="fw-bold text-primary mb-4">Ubicación y Horarios</h2>
+                
+                <div class="mb-3">
+                    <h5 class="fw-bold mb-0 text-dark">Lunes a Viernes</h5>
+                    <p class="text-muted">7:00 AM - 4:00 PM</p>
+                </div>
+                <div class="mb-4">
+                    <h5 class="fw-bold mb-0 text-dark">Sábados y Domingos</h5>
+                    <p class="text-muted">Cerrado</p>
+                </div>
+                <div>
+                    <p class="mb-1 fw-bold text-dark">Dirección:</p>
+                    <p class="text-muted">Av. Ing. Víctor Bravo Ahuja No. 125, Col. Centro, Oaxaca de Juárez, Oax.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-6 text-center">
+                <div class="rounded shadow-sm overflow-hidden border" style="height: 350px;">
+                    <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m18!1m2!1m3!1m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c72212f0000001%3A0xa621cdbbbe7e189d!2sInstituto%20Tecnol%C3%B3gico%20de%20Oaxaca!5e0!3m2!1ses-419!2smx!4v1720309117621!5m2!1ses-419!2smx" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/portafolio.js"></script>
+</body>
+</html>

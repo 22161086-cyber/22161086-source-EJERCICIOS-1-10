@@ -1,0 +1,65 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Darle un toque moderno a las secciones */
+section {
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-2px);
+}
+
+/* Cambiar el color de fondo del círculo temporal de la foto */
+.bg-secondary {
+    background-color: #6c757d !important;
+    border: 3px solid #0d6efd;
+}
+
+/* --- Sección de Contacto y Ubicación --- */
+.contact-section {
+    padding: 5rem 0;
+    background-color: #f8f9fa; /* Fondo gris claro sutil para separar secciones */
+}
+
+.bg-faded {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.bg-faded:hover {
+    transform: translateY(-5px);
+}
+
+.map-container {
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Personalización de los inputs del formulario */
+.contact-section .form-control {
+    padding: 0.75rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+    border-radius: 0.25rem;
+}
+
+.contact-section .form-control:focus {
+    border-color: #0d6efd; /* Azul que combina con tu diseño */
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.contact-section .btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    padding: 0.75rem 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.contact-section .btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}

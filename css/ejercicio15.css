@@ -1,0 +1,138 @@
+/* Restablecemos márgenes y fuentes básicas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Contenedor principal de la aplicación */
+.container {
+    background-color: #ffffff;
+    max-width: 500px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #eceff1;
+    padding-bottom: 10px;
+}
+
+/* Estilos de los formularios y etiquetas */
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #4a5568;
+    font-size: 0.9rem;
+}
+
+input[type="text"], 
+input[type="number"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+    background-color: #f8fafc;
+}
+
+input[type="text"]:focus, 
+input[type="number"]:focus {
+    outline: none;
+    border-color: #3b82f6;
+    background-color: #fff;
+}
+
+/* Contenedor de botones */
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+button.btn-primary {
+    background-color: #3b82f6;
+    color: white;
+}
+
+button.btn-primary:hover {
+    background-color: #2563eb;
+}
+
+button.btn-secondary {
+    background-color: #10b981;
+    color: white;
+}
+
+button.btn-secondary:hover {
+    background-color: #059669;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Sección de Resultados */
+.results-section {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.result-item:last-child {
+    margin-bottom: 0;
+}
+
+/* Estilo para los campos de solo lectura de resultados */
+.result-item input {
+    width: 50%;
+    background-color: #e2e8f0;
+    border: 1px solid #cbd5e1;
+    text-align: center;
+    font-weight: bold;
+    color: #1e293b;
+    pointer-events: none; /* Evita que el usuario edite el resultado */
+}

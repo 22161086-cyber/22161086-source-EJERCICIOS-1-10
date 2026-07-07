@@ -1,0 +1,155 @@
+/* --- Reseteo de estilos básicos --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #f3f4f6; /* Gris claro de fondo */
+    color: #1f2937; /* Gris oscuro para el texto principal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* --- Contenedor del Formulario --- */
+.contenedor-formulario {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 8px;
+}
+
+.subtitulo {
+    font-size: 15px;
+    color: #4b5563; /* Gris medio */
+    margin-bottom: 32px;
+}
+
+/* --- Estructura del Formulario --- */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaciado entre grupos */
+}
+
+.grupo-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Fila doble (Email y Teléfono) */
+.grupo-doble {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* --- Etiquetas (Labels) --- */
+label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #374151;
+}
+
+label span {
+    font-size: 12px;
+    color: #9ca3af; /* Gris claro para el "(opcional)" */
+    font-weight: 400;
+}
+
+/* --- Inputs y Textarea --- */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #1f2937;
+    background-color: #f9fafb;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+/* Marcador de posición (Placeholder) */
+input::placeholder,
+textarea::placeholder {
+    color: #9ca3af;
+}
+
+/* Efecto al hacer clic/foco en los inputs */
+input:focus,
+textarea:focus {
+    border-color: #2563eb; /* Azul corporativo */
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+/* Deshabilitar el cambio de tamaño horizontal en el textarea */
+textarea {
+    resize: vertical;
+}
+
+/* --- Botón de Enviar --- */
+.boton-enviar {
+    background-color: #2563eb; /* Azul */
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    margin-top: 10px;
+}
+
+.boton-enviar:hover {
+    background-color: #1d4ed8; /* Azul más oscuro al pasar el cursor */
+}
+
+.boton-enviar:active {
+    transform: scale(0.98); /* Efecto de presión al hacer clic */
+}
+
+.boton-enviar span {
+    font-weight: 600;
+    transition: transform 0.2s ease;
+}
+
+.boton-enviar:hover span {
+    transform: translateX(4px); /* Mueve la flechita ">" ligeramente a la derecha */
+}
+
+/* --- Adaptación para Pantallas Móviles --- */
+@media (max-width: 480px) {
+    .contenedor-formulario {
+        padding: 24px;
+    }
+    
+    .grupo-doble {
+        grid-template-columns: 1fr; /* Pone el teléfono debajo del email en móviles */
+        gap: 20px;
+    }
+}

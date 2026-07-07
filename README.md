@@ -1,0 +1,1 @@
+El ejercicio que se llevo a continuación la practica 1 al 10 se basa en la programación web que se desarrolla en los lenguajes de HTML , JAVASCRIPT , entre otras , estos códigos que se realizo se utiliza para estructurar y desplegar paginas web y contenidos asi como imágenes , párrafos , textos , tablas , horarios , títulos entre mas  .
